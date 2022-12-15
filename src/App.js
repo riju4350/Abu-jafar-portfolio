@@ -9,7 +9,6 @@ function App() {
       <main className="main">
         <Home />
       </main>
-      <h1>thik ase?</h1>
     </>
   );
 }
