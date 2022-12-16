@@ -39,7 +39,7 @@
   left: 0;
   top: 1rem;
 }
-.home_discription {
+.home_description {
   max-width: 400px;
   margin-bottom: var(--mb-3);
 }
@@ -111,7 +111,7 @@
     width: 50px;
     top: 0.8rem;
   }
-  .home_discription {
+  .home_description {
     max-width: initial;
     margin-bottom: var(--mb-2-5);
   }

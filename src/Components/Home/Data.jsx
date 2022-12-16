@@ -5,7 +5,7 @@ export const Data = () => {
     <div className="home_data">
       <h1 className="home_title">Abu Jafar</h1>
       <h3 className="home_subtitle">Web Developer</h3>
-      <p className="home_discription">
+      <p className="home_description">
         I'm a MERN Stack developer based in Bangladesh. I'm very passionate and
         dedicated to my work. I love to build beautiful website.
       </p>

@@ -33,9 +33,9 @@
   /*========= colors ==============*/
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 35%);
+  --title-color: hsl(var(--hue), var(--sat), 30%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --text-color: hsl(var(--hue), var(--sat), 40%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --container-color: #fff;
   /*========== z-index ============*/
@@ -112,7 +112,7 @@ img {
 }
 .section_title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: var(--title-color-dark);
 }
 .section_subtitle {
   font-size: var(--small-font-size);
@@ -140,14 +140,14 @@ img {
 
 .button {
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: var(--title-color-dark);
   color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: var(--title-color);
 }
 
 .button_icon {
@@ -166,22 +166,32 @@ img {
   .container {
     margin: 0 var(--mb-1-5);
   }
+  .button {
+    padding: 1rem 1.75rem;
+  }
+  .button_icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 /* for medium devices */
 @media screen and (max-width: 768px) {
+  /* body {
+    margin: 0 0 var(--header-height) 0;
+  } */
+  .section_subtitle {
+    margin-bottom: var(--mb-3);
+  }
 }
 /* for small devices */
 @media screen and (max-width: 576px) {
 }
 /* for extra small devices */
 @media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
   .container {
     margin: 0 var(--mb-1);
   }
 }
-/* git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/riju4350/Abu-jafar-portfolio.git
-git push -u origin main */
