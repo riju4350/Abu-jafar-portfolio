@@ -54,14 +54,14 @@ nav {
   header {
     /* top: initial; */
     top: 0;
-    bottom: 0;
+    /* bottom: 0; */
   }
   .nav_menu {
     position: fixed;
-    /* bottom: -100%; */
-    top: 0;
+    /* left: 0;*/ /*navber open from bottom*/
+    /*bottom: -100%; */
+    top: 0; /*navber open from bottom*/
     left: -100%;
-    /* left: 0; */
     width: 100%;
     /* width: 25%; */
     height: 100vh;
@@ -69,7 +69,7 @@ nav {
     /* background-color: var(--container-color); */
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 0 1.5rem 1.5rem 0;
+    /* border-radius: 0 1.5rem 1.5rem 0; */
     transition: 0.3s;
   }
   /* Show menu */

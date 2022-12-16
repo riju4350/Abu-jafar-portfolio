@@ -94,3 +94,62 @@
   font-size: 1.25rem;
   color: var(--title-color-dark);
 }
+
+/*========== Breakpoints ===========*/
+
+/* for larger devices */
+@media screen and (max-width: 992px) {
+  .home_content {
+    grid-template-columns: 100px repeat(2, 1fr);
+    column-gap: 1.25rem;
+  }
+  .home_subtitle {
+    padding-left: 3.75rem;
+    margin-bottom: var(--mb-1);
+  }
+  .home_subtitle::before {
+    width: 50px;
+    top: 0.8rem;
+  }
+  .home_discription {
+    max-width: initial;
+    margin-bottom: var(--mb-2-5);
+  }
+  .home_img {
+    width: 250px;
+    height: 250px;
+  }
+  .home_scroll {
+    margin-left: 8rem;
+  }
+}
+
+/* for medium devices */
+@media screen and (max-width: 768px) {
+  .home_content {
+    grid-template-columns: 0.5fr 3fr;
+    padding-top: 3.5rem;
+  }
+  .home_img {
+    order: initial;
+    justify-self: initial;
+  }
+  .home_data {
+    grid-column: 1/3;
+  }
+  .home_img {
+    box-shadow: inset 0 0 0 6px rgb(255 255 255/30%);
+    width: 200px;
+    height: 200px;
+  }
+  .home_scroll {
+    display: none;
+  }
+}
+/* for extra small devices */
+@media screen and (max-width: 350px) {
+  .home_img {
+    width: 180px;
+    height: 180px;
+  }
+}
