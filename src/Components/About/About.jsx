@@ -18,10 +18,10 @@ const About = () => {
             I'm a MERN stack developer, I create web pages with beautiful UI/UX.
             I have 1 years of experience and I have many happy clients.
           </p>
-          <a download href={CV} className="button button_flex">
+          <a download href={CV} className="button button_flex ">
             Download CV
             <svg
-              class="button__icon"
+              className="button_icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
